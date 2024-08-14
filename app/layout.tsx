@@ -10,8 +10,18 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Countdown Timer',
+  title: {
+    default: 'Countdown Timer',
+    template: '%s | Yugma Dewangga',
+  },
   description: 'Created by Yugma Dewangga',
+  openGraph: {
+    title: 'Countdown Timer',
+    description: 'Created by Yugma Dewangga',
+    siteName: 'Countdown Timer',
+    locale: 'id-ID',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
